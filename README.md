@@ -37,6 +37,8 @@ In order to run this project on your local repository, please follow these steps
 
 6. `2e.Visuals_GISMaps.R`: Construction trends mapped by county and metropolitan regions in the U.S.
 
+7. `3.Funding_Analysis.R`: Analysis of federal funding, including contracts and financial assistance, to all counties in the U.S. Please use the [Federal Awards Data Archive](https://www.usaspending.gov/download_center/award_data_archive) website to extract funding data on your local computer. The file is too large to be uploaded on Github. I do provide a filtered version of the data that only includes Greater Philadelphia and relevant federal departments that provide infrastructure funding. 
+
 ## Credits
 
 The entire data collection, analysis and visualization in this repository was done by Haseeb Bajwa. The final report, based on this analysis, is being collaborated upon with Michael Shields and Kenyatta James. You contact them on Linked In: 
