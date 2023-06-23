@@ -100,7 +100,8 @@ abs_data <- abs_data[-1,]
 ddi <- read_ipums_ddi("Data/usa_00024.xml")
 ipums_view(ddi)
 
-# The dat.gz is the dataset downloaded from the IPUMS website
+# The dat.gz is the dataset downloaded from the IPUMS website. 
+# Insert the name of your IPUMS dataset here along with the corresponding xml file
 ipums_data <- ipumsr::read_ipums_micro(
   ddi = "Data/usa_00024.xml",
   data_file = "Data/usa_00024.dat.gz"
