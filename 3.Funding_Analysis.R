@@ -80,6 +80,8 @@ read_and_clean_data <- function(folder_path) {
 }
 
 ##--Running the function on all the datasets----
+# Extract the federal contracts data from https://www.usaspending.gov/download_center/award_data_archive and store in a "Federal Assistance" folder inside your Data folder. 
+# The 'read_and_clean_data' will read and clean all files 
 cleaned_data <- read_and_clean_data("Data/Federal_Assistance")
 
 ##--Putting dataframe in R's global environment----
@@ -91,7 +93,8 @@ list2env(cleaned_data, envir = .GlobalEnv)
 # Initialize an empty dataframe to store the combined data
 df_grphl <- data.frame()
 
-# Loop over the names of dataframes
+# Loop over the names of dataframes 
+# replace the number in the for loop to the number of dataframes in your R environment. For example, my code had 68 data frames.
 for (i in 1:68) {
   # Get the name of the current dataframe
   df_name <- paste0("df", i, "_clean")
