@@ -130,9 +130,10 @@ region_employment %>%
   filter(race != "Otherrace" & race != "Hawaii") %>% 
   ggplot(aes(x=reorder(race, region_emp_prop),  y=region_emp_prop, fill = region)) +
   geom_col(position = "dodge", width = 0.7) +
+  geom_hline(yintercept = 0, color = "grey20", linetype = "dotted") +
   scale_fill_manual(values = c("#3E92CC", "#D8315B")) +
   labs(x = "", y = "Employment Proportion - Population Proportion \n(% points)",
-       title = "Proportional Representation in Construction Sector \nin Greater Philadelphia (2010 - 2021)",
+       title = "Employment Representation in Construction Sector \nin Greater Philadelphia (2010 - 2021)",
        subtitle = "This graph shows the representation of employees in the Construction sector by race and ethnicity. \nPositive numbers mean the ethnicity is over-represented in the construction sector compared to \ntheir population proportion in the same region. Negative numbers mean vice versa. The bars are \nalso separated by Philadelphia and rest of Greater Philadelphia excluding Philadelphia.",
        caption = "Source: American Community Survey") +
   theme_minimal() + 
