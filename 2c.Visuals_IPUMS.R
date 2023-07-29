@@ -120,6 +120,7 @@ ethnic_merge %>%
   filter(race != "Otherrace" & race != "Native") %>% 
   ggplot(aes(x=reorder(race, avg_diff_prop),  y=avg_diff_prop, fill = region)) +
   geom_col(position = "dodge", width = 0.7) +
+  geom_hline(yintercept = 0, color = "grey20", linetype = "dotted") +
   scale_fill_manual(values = c("#FF8811", "#392F5A")) +
   labs(x = "", y = "Employer Proportion - Population Proportion \n(% points)",
        title = "Employer Representation in Construction Sector \nin Greater Philadelphia (2010 - 2021)",
